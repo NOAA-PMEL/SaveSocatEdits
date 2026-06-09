@@ -1,0 +1,12 @@
+# config.yaml
+SOCAT_VERSION: SOCAT_v2026
+dsg_file_dir: C:/Users/schweitzer/Documents/IntellijProjects/SaveSocatEdits/dsg
+dec_dsg_file_dir: C:/Users/schweitzer/Documents/IntellijProjects/SaveSocatEdits/dec_dsg
+database:
+  user: $SOCAT_EDIT_MYSQL_USERNAME
+  password: $SOCAT_EDIT_MYSQL_PASSWORD
+  host: sour.pmel.noaa.gov
+  port: 3306
+  driver: mysql+pymysql
+  database: SOCATv2025
+
