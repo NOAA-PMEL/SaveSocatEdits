@@ -1,0 +1,37 @@
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+Content-Type: text/html
+
+###
+
+GET http://127.0.0.1:8000/hello/User
+Accept: application/json
+
+###
+
+
+POST http://127.0.0.1:8000/SaveEdits/
+Content-Type: application/json
+
+{
+  "expocode": "MLYD20231002 ",
+  "reviewer_email": "andrew.watson@exetor.ac.uk",
+  "woce_flag_name": "WOCE_CO2_water ",
+  "woce_flag_value": 9,
+  "data_varaible_name": "fCO2_recommended",
+  "comment": "Now is the time for all good women to come to the aid of their party.",
+  "locations": [
+    {"longitude": 135.2843, "latitude": 34.6279, "fCO2_recommended": 223.54503295443286, "time": "2023-10-26T21:28:30Z"},
+    {"longitude": 135.293, "latitude": 34.6377, "fCO2_recommended": 230.84176539986032, "time": "2023-10-26T21:32:09Z"},
+    {"longitude": 135.3002, "latitude": 34.6462, "fCO2_recommended": 239.49466454933054, "time": "2023-10-26T21:35:47Z"},
+    {"longitude": 135.302, "latitude": 34.6549, "fCO2_recommended": 224.11538153304403, "time": "2023-10-26T21:39:26Z"},
+    {"longitude": 135.3027, "latitude": 34.6637, "fCO2_recommended": 202.44289747182435, "time": "2023-10-26T21:43:05Z"},
+    {"longitude": 135.3035, "latitude": 34.6725, "fCO2_recommended": 203.0030814405213, "time": "2023-10-26T21:46:43Z"},
+    {"longitude": 135.2941, "latitude": 34.6857, "fCO2_recommended": 219.22061434335848, "time": "2023-10-26T21:57:39Z"},
+    {"longitude": 135.2932, "latitude": 34.6872, "fCO2_recommended": 218.298545804183, "time": "2023-10-26T22:01:18Z"},
+    {"longitude": 135.2902, "latitude": 34.6872, "fCO2_recommended": 213.46550609711934, "time": "2023-10-26T22:12:13Z"},
+    {"longitude": 135.2901, "latitude": 34.687, "fCO2_recommended": 203.8336058791019, "time": "2023-10-26T22:15:52Z"}
+  ]
+}
