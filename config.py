@@ -42,7 +42,7 @@ yaml_config = load_yaml_config(Path(__file__).parent / "config.yaml")
 settings = AppSettings(**yaml_config)
 
 
-settings = get_settings()
+# Removed the get_settings() call as it is not defined in the snippet.
 engine = create_engine(f"{settings.database.driver}://{settings.database.user}:{settings.database.password}@{settings.database.host}:{settings.database.port}/{settings.database.database}")
 
 
