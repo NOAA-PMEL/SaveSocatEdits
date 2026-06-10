@@ -13,7 +13,7 @@ logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
-app = FastAPI()
+app = FastAPI(root_path="/SaveSocatEdits")
 
 def _find_observation_indices(dataset, sequence, data_variable_name="fCO2_recommended"):
     """
