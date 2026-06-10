@@ -178,7 +178,7 @@ Includes: file operations, match statistics, error details.
 
 ## Security Notes
 
-- Database credentials in config.yaml - do not commit
+- Database credentials in config.yaml are protected by environment variables.
 - Uses yaml.safe_load() for security
 - Input validation via Pydantic
 - NetCDF files opened with read-write access only as needed
