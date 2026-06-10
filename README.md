@@ -73,24 +73,19 @@ Updates WOCE flags and saves observation edits to netCDF files.
 Request:
 POST http://host:port/SaveEdits
 Content-Type: application/json
-
+```
 {
-"expocode": "MLYD20231002",
-"reviewer_email": "reviewer@example.com",
-"woce_flag_name": "WOCE_CO2_water",
-"woce_flag_value": 9,
-"data_variable_name": "fCO2_recommended",
-"comment": "Quality control update",
-"locations": [
-{
-"longitude": 135.2843,
-"latitude": 34.6279,
-"fCO2_recommended": 223.54503295443286,
-"time": "2023-10-26T21:28:30Z"
+    "expocode": "MLYD20231002",
+    "reviewer_email": "reviewer@example.com",
+    "woce_flag_name": "WOCE_CO2_water",
+    "woce_flag_value": 9,
+    "data_variable_name": "fCO2_recommended",
+    "comment": "Quality control update",
+    "locations": [
+        {"longitude": 135.2843, "latitude": 34.6279, "fCO2_recommended": 223.54503295443286, "time": "2023-10-26T21:28:30Z"}
+    ]
 }
-]
-}
-
+```
 Request Parameters:
 - expocode (string, required): Cruise identifier
 - reviewer_email (string): Email of reviewer
@@ -107,10 +102,11 @@ Location Object:
 - time (string, ISO 8601): Observation timestamp
 
 Response:
+```
 {
 "message": "Saved edits for MLYD20231002"
 }
-
+```
 Matching Tolerances:
 - Coordinates: ±1e-5 degrees
 - Values: ±1e-4 units
